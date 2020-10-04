@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>POO2RestAPI</name>
+    </assembly>
+    <members>
+        <member name="T:POO2RestAPI.Controllers.BaseAncestralController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Controllers.BaseAncestralController.Contexto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.BaseAncestralController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:POO2RestAPI.Controllers.EstadoController">
+            <sumary>
+            Recurso Estado
+            </sumary>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.EstadoController.#ctor">
+            <sumary>
+            Construtor da classe
+            </sumary>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Get">
+            <sumary>
+            Obtem todos os registros da tabela referente
+            </sumary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.EstadoController.GetByID(System.Int32)">
+            <sumary>
+            Obtem um registro da tabela referente
+            </sumary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Update">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Delete">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Get">
+            <sumary>
+            Obtem todos os registros da tabela referente
+            </sumary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.GetByID(System.Int32)">
+            <sumary>
+            Obtem um registro da tabela referente
+            </sumary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.GetByFkID(System.Int32)">
+            <sumary>
+            Obtem um registro da tabela referente
+            </sumary>
+            <param name="idEstado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Create">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Update">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Delete">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:POO2RestAPI.Controllers.RegiaoController">
+            <sumary>
+            Recurso Região
+            </sumary>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.RegiaoController.#ctor">
+            <sumary>
+            Construtor da classe
+            </sumary>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.RegiaoController.Get">
+            <sumary>
+            Obtem todos os registros da tabela referente
+            </sumary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.RegiaoController.GetByID(System.Int32)">
+            <sumary>
+            Obtem um registro da tabela referente
+            </sumary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.RegiaoController.Create(POO2RestAPI.Models.Poco.PocoRegiao)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.RegiaoController.Update(POO2RestAPI.Models.Poco.PocoRegiao)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.RegiaoController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:POO2RestAPI.Models.FakeDB.Pessoa">
+            <summary>
+            Classe Pessoa.
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.Pessoa.Id">
+            <summary>
+            chave primária do registro.
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.Pessoa.Nome">
+            <summary>
+            Nome da pessoa.
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.Pessoa.DataDeInscricao">
+            <summary>
+            Data de Inscrição no Aplicativo.
+            </summary>
+        </member>
+        <member name="T:POO2RestAPI.Models.FakeDB.PessoaFisica">
+            <summary>
+            Classe Pessoa Fisica.
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.DataDeNascimento">
+            <summary>
+            Data de nascimento da pessoa.
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.RG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.CPF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.TituloDeEleitor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:POO2RestAPI.Models.FakeDB.PessoaJuridica">
+            <summary>
+            Classe Pessoa Jurídica.
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaJuridica.CNPJ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaJuridica.IE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.FakeDB.PessoaJuridica.CNAE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
