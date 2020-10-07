@@ -24,7 +24,7 @@ namespace POO2RestAPI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Construtor que inicializa
         /// </summary>
         public BaseAncestralController(): base()
         {

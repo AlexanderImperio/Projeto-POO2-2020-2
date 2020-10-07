@@ -5,6 +5,9 @@ namespace POO2RestAPI.Models.ProjetoDB
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
+    /// <summary>
+    /// Facilita consultas no banco
+    /// </summary>
     public partial class ModelProjetoDB : DbContext
     {
 
@@ -16,10 +19,25 @@ namespace POO2RestAPI.Models.ProjetoDB
         {
         }
 
+        /// <summary>
+        /// Representa uma entidade da tabela Estados
+        /// </summary>
         public virtual DbSet<Estado> Estados { get; set; }
+
+        /// <summary>
+        /// Representa uma entidade da tabela Municipios
+        /// </summary>
         public virtual DbSet<Municipio> Municipios { get; set; }
+
+        /// <summary>
+        /// Representa uma entidade da tabela Regioes
+        /// </summary>
         public virtual DbSet<Regiao> Regioes { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Estado>()

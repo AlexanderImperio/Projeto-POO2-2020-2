@@ -3,6 +3,7 @@ using WebActivatorEx;
 using POO2RestAPI;
 using Swashbuckle.Application;
 using System.Linq;
+using System.IO;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -13,7 +14,7 @@ namespace POO2RestAPI
         public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
-
+            var filePath = Path.Combine(System.AppContext.BaseDirectory, "C:\\Users\\alexa\\Desktop\\Aulas\\POO2\\workspace\\Projeto-POO2-2020-2\\POO2RestAPI\\Docs\\POO2RestAPI.xml");
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>
                     {
@@ -35,14 +36,17 @@ namespace POO2RestAPI
                             .Description("API Key para acessar API de forma segura.")
                             .Name("API-key-projeto")
                             .In("header");
-                        c.IncludeXmlComments(GetXmlCommentsPath());
+                        c.IncludeXmlComments(filePath);
                     })
+              
+
                 .EnableSwaggerUi(c =>
                     {
                         c.DocumentTitle("POO2RestAPI - 2020 - Swagger UI");
                         c.DocExpansion(DocExpansion.List);
                         c.EnableDiscoveryUrlSelector();
                     });
+
         }
 
         private static string GetXmlCommentsPath()

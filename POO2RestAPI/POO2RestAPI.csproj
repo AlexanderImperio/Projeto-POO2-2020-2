@@ -102,6 +102,7 @@
     <Content Include="App_Data\ProjetoDB_log.ldf">
       <DependentUpon>ProjetoDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Docs\POO2RestAPI.xml" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -111,15 +112,10 @@
     <Compile Include="Controllers\BaseAncestralController.cs" />
     <Compile Include="Controllers\EstadoController.cs" />
     <Compile Include="Controllers\MunicipioController.cs" />
-    <Compile Include="Controllers\PessoaFisicaController.cs" />
     <Compile Include="Controllers\RegiaoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\FakeDB\DataBase.cs" />
-    <Compile Include="Models\FakeDB\Pessoa.cs" />
-    <Compile Include="Models\FakeDB\PessoaFisica.cs" />
-    <Compile Include="Models\FakeDB\PessoaJuridica.cs" />
     <Compile Include="Models\Poco\PocoEstado.cs" />
     <Compile Include="Models\Poco\PocoMunicipio.cs" />
     <Compile Include="Models\Poco\PocoRegiao.cs" />
@@ -138,9 +134,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Docs\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -16,7 +16,7 @@
         </member>
         <member name="M:POO2RestAPI.Controllers.BaseAncestralController.#ctor">
             <summary>
-            
+            Construtor que inicializa
             </summary>
         </member>
         <member name="T:POO2RestAPI.Controllers.EstadoController">
@@ -41,29 +41,38 @@
             </sumary>
             <returns></returns>
         </member>
-        <member name="M:POO2RestAPI.Controllers.EstadoController.Create">
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Create(POO2RestAPI.Models.Poco.PocoEstado)">
             <summary>
-            
+            Cria um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
-        <member name="M:POO2RestAPI.Controllers.EstadoController.Update">
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Update(POO2RestAPI.Models.Poco.PocoEstado)">
             <summary>
-            
+            Atualiza um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
-        <member name="M:POO2RestAPI.Controllers.EstadoController.Delete">
+        <member name="M:POO2RestAPI.Controllers.EstadoController.Delete(System.Int32)">
             <summary>
-            
+            Apaga um registro na tabela referente 
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:POO2RestAPI.Controllers.MunicipioController">
+            <summary>
+            Recurso Região
+            </summary>
+        </member>
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.#ctor">
+            <summary>
+            Construtor da classe
+            </summary>
         </member>
         <member name="M:POO2RestAPI.Controllers.MunicipioController.Get">
             <sumary>
             Obtem todos os registros da tabela referente
             </sumary>
-            <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:POO2RestAPI.Controllers.MunicipioController.GetByID(System.Int32)">
@@ -74,26 +83,26 @@
         </member>
         <member name="M:POO2RestAPI.Controllers.MunicipioController.GetByFkID(System.Int32)">
             <sumary>
-            Obtem um registro da tabela referente
+            Obtem todos os municpios de um estado
             </sumary>
             <param name="idEstado"></param>
             <returns></returns>
         </member>
-        <member name="M:POO2RestAPI.Controllers.MunicipioController.Create">
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Create(POO2RestAPI.Models.Poco.PocoMunicipio)">
             <summary>
-            
+            Insere um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
-        <member name="M:POO2RestAPI.Controllers.MunicipioController.Update">
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Update(POO2RestAPI.Models.Poco.PocoMunicipio)">
             <summary>
-            
+            Atualiza um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
-        <member name="M:POO2RestAPI.Controllers.MunicipioController.Delete">
+        <member name="M:POO2RestAPI.Controllers.MunicipioController.Delete(System.Int32)">
             <summary>
-            
+            Apaga um registro da tabela referente
             </summary>
             <returns></returns>
         </member>
@@ -117,95 +126,57 @@
             <sumary>
             Obtem um registro da tabela referente
             </sumary>
+            <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:POO2RestAPI.Controllers.RegiaoController.Create(POO2RestAPI.Models.Poco.PocoRegiao)">
             <summary>
-            
+            Cria um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
         <member name="M:POO2RestAPI.Controllers.RegiaoController.Update(POO2RestAPI.Models.Poco.PocoRegiao)">
             <summary>
-            
+            Atualiza um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
         <member name="M:POO2RestAPI.Controllers.RegiaoController.Delete(System.Int32)">
             <summary>
-            
+            Apaga um registro na tabela referente
             </summary>
             <returns></returns>
         </member>
-        <member name="T:POO2RestAPI.Models.FakeDB.Pessoa">
+        <member name="T:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB">
             <summary>
-            Classe Pessoa.
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.Pessoa.Id">
-            <summary>
-            chave primária do registro.
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.Pessoa.Nome">
-            <summary>
-            Nome da pessoa.
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.Pessoa.DataDeInscricao">
-            <summary>
-            Data de Inscrição no Aplicativo.
-            </summary>
-        </member>
-        <member name="T:POO2RestAPI.Models.FakeDB.PessoaFisica">
-            <summary>
-            Classe Pessoa Fisica.
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.DataDeNascimento">
-            <summary>
-            Data de nascimento da pessoa.
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.RG">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.CPF">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaFisica.TituloDeEleitor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:POO2RestAPI.Models.FakeDB.PessoaJuridica">
-            <summary>
-            Classe Pessoa Jurídica.
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaJuridica.CNPJ">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaJuridica.IE">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:POO2RestAPI.Models.FakeDB.PessoaJuridica.CNAE">
-            <summary>
-            
+            Facilita consultas no banco
             </summary>
         </member>
         <member name="M:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB.#ctor">
             <summary>
             
             </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB.Estados">
+            <summary>
+            Representa uma entidade da tabela Estados
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB.Municipios">
+            <summary>
+            Representa uma entidade da tabela Municipios
+            </summary>
+        </member>
+        <member name="P:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB.Regioes">
+            <summary>
+            Representa uma entidade da tabela Regioes
+            </summary>
+        </member>
+        <member name="M:POO2RestAPI.Models.ProjetoDB.ModelProjetoDB.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
         </member>
     </members>
 </doc>
